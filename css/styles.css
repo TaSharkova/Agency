@@ -140,7 +140,7 @@ header {
   justify-content: center;
 }
 
-.site-menu {
+.menu {
   margin: 0 0 0 -4%;
   padding: 0;
   box-sizing: border-box;
@@ -151,13 +151,13 @@ header {
   justify-content: space-between;
 }
 
-.menu-item {
+.menu__item {
   display: flex;
   height: 89px;
   align-items: stretch;
 }
 
-.menu-link {
+.menu__link {
   margin: 0;
   padding: 38px 23px 26px;
   box-sizing: border-box;
@@ -169,12 +169,12 @@ header {
   text-transform: uppercase;
 }
 
-.menu-link:hover {
+.menu__link:hover {
   background-color: #ff3f40;
   transition: 0.3s ease;
 }
 
-.activ-link {
+.menu__link_activ {
   background-color: #ff3f40;
   width: 90px;
 }
@@ -190,7 +190,7 @@ header {
   justify-content: space-between;
 }
 
-.intro-info {
+.intro__info {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -198,7 +198,7 @@ header {
   flex-direction: column;
 }
 
-.intro-heading {
+.intro__heading {
   margin: -13px 0 19px 1px;
   padding: 0;
   box-sizing: border-box;
@@ -210,11 +210,11 @@ header {
   color: #000;
 }
 
-.intro-word {
+.intro__heading_wide {
   letter-spacing: 6px;
 }
 
-.intro-text {
+.intro__text {
   margin: 0 0 56px 1px;
   padding: 0;
   box-sizing: border-box;
@@ -225,7 +225,7 @@ header {
   color: #000000;
 }
 
-.intro-button {
+.intro__button {
   margin: 0;
   padding: 11px 0 0 0;
   box-sizing: border-box;
@@ -242,7 +242,7 @@ header {
   text-decoration: none;
 }
 
-.intro-video {
+.intro__video {
   width: 551px;
   height: 356px;
   object-fit: cover;
