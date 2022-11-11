@@ -117,17 +117,18 @@
   font-size: 16px;
 }
 
-/* header */
-.header-wrapper {
+.background {
   margin: 0;
-  padding: 0 1em;
-  box-sizing: border-box;
   width: 100%;
-  min-height: 219px;
+  height: 688px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
   background-color: #f6f2f2;
-  display: flex;
+  color: #f6f2f2;
 }
 
+/* header */
 header {
   margin: 29px auto 101px;
   padding: 0 1em;
@@ -179,16 +180,6 @@ header {
 }
 
 /* intro */
-.intro-wrapper {
-  margin: 0;
-  padding: 0 1em;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 469px;
-  background-color: #f6f2f2;
-  display: flex;
-}
-
 .intro {
   margin: 0 auto;
   padding: 0;
