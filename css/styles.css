@@ -215,6 +215,7 @@
     position: absolute;
     top: 89px;
     right: 0px;
+    z-index: 1;
     display: none;
   }
   
@@ -241,24 +242,39 @@
   background-color: #b8b8b8;
 }
 
-.burger-button__line_1 {
+.burger-button__line1_change {
 transform: rotate(45deg);
 transform-origin: 0% 0%;
 width: 45px;
 transition: transform 0.4s ease-in-out;
 }
 
-.burger-button__line_2 {
+.burger-button__line2_change {
   transform: scaleY(0);
   transition: transform 0.2s ease-in-out;
 }
 
-.burger-button__line_3 {
+.burger-button__line3_change {
   transform: rotate(-45deg);
   transform-origin: 0% 100%;
   width: 45px;
   transition: transform 0.4s ease-in-out;
 }
+
+.overlay_active {
+  width: 100vw;
+  height: calc(100vh - 89px);
+  background-color: #2c2c2c;
+  opacity: 50%;
+  position: fixed;
+  top: 89px;
+  display: none;
+}
+
+.overlay_active {
+  display: flex;
+}
+
 /* intro */
 .intro {
   margin: 0 0 108px;
