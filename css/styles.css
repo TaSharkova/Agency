@@ -412,7 +412,7 @@
   padding: 0 1em;
   border-bottom: solid 2px #ececec;
   max-width: 1253px;
-  min-height: 589px;
+  min-height: 585px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -568,7 +568,7 @@
 /* portfolio */
 .portfolio {
   margin: 0 auto 122px;
-  padding: 1em;
+  padding: 0 1em;
   max-width: 1253px;
   min-height: 930px;
 }
@@ -702,8 +702,8 @@
 
 /* about team */
 .about {
-  margin: 0 auto 82px;
-  padding: 1em;
+  margin: 0 auto 95px;
+  padding: 0 1em;
   max-width: 1253px;
   min-height: 709px;
 }
@@ -908,11 +908,11 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
   }
-  
+
   .team__leader-links {
     gap: 3vw;
   }
-  
+
   .team__members {
     margin-top: 15px;
     max-width: 90vw;
@@ -936,20 +936,20 @@
   }
 }
 
-  @media screen and (max-width: 600px) {
-    .team {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .team__leader-photo {
-      margin: 0 0 15px;
-      width: 90vw;
-      height: 106vw;
-      max-width: 320px;
-      max-height: 460px;
-    }
+@media screen and (max-width: 600px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team__leader-photo {
+    margin: 0 0 15px;
+    width: 90vw;
+    height: 106vw;
+    max-width: 320px;
+    max-height: 460px;
+  }
 }
 
 /* subscribe */
@@ -1042,7 +1042,7 @@
 
 /* contacts */
 .contacts {
-  margin: 0 0 127px;
+  margin: 0 0 110px;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
@@ -1053,8 +1053,8 @@
 }
 
 .feedback {
-  margin: 0 104px 0 0;
-  padding: 0;
+  margin: 0 70px 0 0;
+  padding: 0 1em;
   max-width: 755px;
   min-height: 770px;
   display: flex;
@@ -1112,7 +1112,7 @@
   padding: 10px 53px;
   box-sizing: border-box;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   width: 339px;
   height: 69px;
@@ -1128,7 +1128,7 @@
   padding: 10px 45px;
   box-sizing: border-box;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   width: 339px;
   height: 69px;
@@ -1144,7 +1144,7 @@
   padding: 27px 51px;
   box-sizing: border-box;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   width: 731px;
   height: 249px;
@@ -1180,7 +1180,7 @@
   margin: 0;
   padding: 133px 0 0 78px;
   box-sizing: border-box;
-  width: 390px;
+  width: 425px;
   height: 481px;
   background-color: #2d2d2d;
   display: flex;
@@ -1239,6 +1239,65 @@
   flex: 1 1 auto;
   background-color: #2d2d2d;
   height: 481px;
+}
+
+@media screen and (max-width: 1299px) {
+  .contacts {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .feedback {
+    margin-right: 0;
+  }
+  
+  .contact__info {
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .contact__address {
+    text-align: center;
+  }
+
+  .contacts::before {
+    display: none;
+  }
+
+  .contacts::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .feedback__form {
+    width: 80vw;
+    align-self: center;
+  }
+  
+  .feedback__name {
+    margin: 0;
+    width: 80vw;
+  }
+
+  .feedback__email {
+    width: 80vw;
+  }
+
+  .feedback__message {
+    width: 80vw;
+  }
+
+  .feedback__button {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .feedback__heading {
+    font-size: 6vw;
+  }
 }
 
 /* footer */
