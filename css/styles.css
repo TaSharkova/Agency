@@ -568,9 +568,8 @@
 /* portfolio */
 .portfolio {
   margin: 0 auto 122px;
-  padding: 0;
-  box-sizing: border-box;
-  width: 1253px;
+  padding: 1em;
+  max-width: 1253px;
   min-height: 930px;
 }
 
@@ -621,7 +620,7 @@
 .filter {
   margin: 0 auto 58px;
   padding: 0 1em;
-  width: 922px;
+  max-width: 922px;
   min-height: 24px;
   list-style: none;
   display: flex;
@@ -658,6 +657,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .products__sample {
@@ -674,6 +674,30 @@
 
 .products__sample:hover {
   box-shadow: -5px -15px 55px rgb(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 966px) {
+  .filter {
+    justify-content: center;
+    gap: 5vw;
+    margin-bottom: 20px;
+  }
+
+  .products__sample {
+    width: 29vw;
+    height: 28.4vw;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .portfolio__heading {
+    font-size: 6vw;
+  }
+
+  .products__sample {
+    width: 198px;
+    height: 194px;
+  }
 }
 
 /* about team */
