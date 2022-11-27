@@ -703,9 +703,8 @@
 /* about team */
 .about {
   margin: 0 auto 95px;
-  padding: 0;
-  box-sizing: border-box;
-  width: 1253px;
+  padding: 1em;
+  max-width: 1253px;
   min-height: 709px;
 }
 
@@ -855,8 +854,9 @@
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  justify-content: end;
+  justify-content: start;
   gap: 19px;
   list-style: none;
 }
@@ -900,6 +900,56 @@
   height: 100%;
   object-fit: contain;
   object-position: bottom;
+}
+
+@media screen and (max-width: 855px) {
+  .team__leader-photo {
+    height: 380px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .team__leader-links {
+    gap: 3vw;
+  }
+  
+  .team__members {
+    margin-top: 15px;
+    max-width: 90vw;
+    min-height: 230px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    justify-content: center;
+    gap: 2vw;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .about__heading {
+    font-size: 6vw;
+  }
+
+  .team__leader-photo {
+    margin-right: 3vw;
+    width: 45vw;
+    height: 53vw;
+  }
+}
+
+  @media screen and (max-width: 685px) {
+    .team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team__leader-photo {
+      margin: 0 0 15px;
+      width: 90vw;
+      height: 106vw;
+      max-width: 320px;
+      max-height: 460px;
+    }
 }
 
 /* subscribe */
